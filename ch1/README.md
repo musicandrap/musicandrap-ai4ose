@@ -79,7 +79,7 @@ brew install qemu
 
 **Windows**:
 
-从https://qemu.weilnetz.de/w64/下载并且运行qemu-w64-setup-*.exe。
+从 https://qemu.weilnetz.de/w64/ 下载并且运行qemu-w64-setup-*.exe。
 
 **验证安装：**
 
