@@ -77,6 +77,10 @@ sudo apt install qemu-system-misc
 brew install qemu
 ```
 
+**Windows**:
+
+从https://qemu.weilnetz.de/w64/下载并且运行qemu-w64-setup-*.exe。
+
 **验证安装：**
 
 ```bash
@@ -183,6 +187,10 @@ Hello, world!
 - 固件直接操作硬件
 
 当我们在 Linux 上执行 `println!("Hello, world!")` 时，实际经历了：`println!` → Rust 标准库 → libc 的 `write()` → Linux 内核 `sys_write` 系统调用 → 串口/终端驱动 → 硬件显示。
+
+**什么是SBI？** 
+
+SBI是**RISC-V架构独有的标准化固件接口规范**，相当于操作系统内核的“硬件服务员”，为不同RISC-V硬件平台提供统一的接口（如字符打印、时间管理）。
 
 **tg-ch1 做了什么？** 它跳过了标准库和操作系统内核，直接在裸机上通过 SBI 接口输出字符。这就是"最小执行环境"的含义。
 
