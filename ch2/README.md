@@ -167,7 +167,7 @@ Hello world from user mode program!
 
 ```
 cargo install tg-checker@0.1.0-preview.1
-cargo run | tg-checker --ch2
+cargo run | tg-checker --ch 2
 ```
 
 结果
